@@ -7,7 +7,7 @@ dir.create("covers", showWarnings = FALSE)
 # Artists to search
 artists <- c("BTS", "BLACKPINK", "NewJeans", "Stray Kids", "CORTIS")
 
-# Function to fetch album info, cover image, and tracklist
+# Function to fetch album info, cover image, tracklist, and audio previews
 fetch_album <- \(artist) {
   # 1. Search for top album
   search_url <- str_c(
@@ -31,27 +31,48 @@ fetch_album <- \(artist) {
   cover_filename <- str_c(clean_artist, "_", clean_album, ".jpg")
   cover_path <- file.path("covers", cover_filename)
   
-  download.file(img_url, destfile = cover_path, mode = "wb", quiet = TRUE)
+  if (!file.exists(cover_path)) {
+    download.file(img_url, destfile = cover_path, mode = "wb", quiet = TRUE)
+  }
   
-  # 3. Lookup tracklist
+  # 3. Lookup tracklist with audio previews
   tracks_url <- str_c("https://itunes.apple.com/lookup?id=", col_id, "&entity=song")
   track_results <- fromJSON(tracks_url)$results
   
-  song_titles <- track_results |>
+  tracks_df <- track_results |>
     as_tibble() |>
-    filter(wrapperType == "track") |>
-    pull(trackName)
+    filter(wrapperType == "track")
+  
+  # 4. Find the most popular track for this album from iTunes song search
+  pop_search_url <- str_c(
+    "https://itunes.apple.com/search?term=",
+    URLencode(str_c(artist, " ", album_name)),
+    "&entity=song&limit=1"
+  )
+  pop_results <- fromJSON(pop_search_url)$results
+  top_track_name <- if (!is.null(pop_results) && nrow(pop_results) > 0) pop_results$trackName[1] else ""
+  
+  tracks_list <- tracks_df |>
+    transmute(
+      track_number = trackNumber,
+      track_name = trackName,
+      duration_sec = round(trackTimeMillis / 1000),
+      preview_url = previewUrl,
+      is_favorite = (trackName == top_track_name)
+    )
   
   tibble(
     artist = artist,
     album = album_name,
+    release_date = results$releaseDate[1],
+    genre = results$primaryGenreName[1],
     cover_file = cover_path,
-    tracks = list(song_titles)
+    tracks = list(tracks_list)
   )
 }
 
 albums_data <- map(artists, fetch_album) |> list_rbind()
 
-# Save structured data to json for our website
+# Save enriched data
 write_json(albums_data, "albums_data.json", pretty = TRUE)
-message("Saved album data and covers for ", nrow(albums_data), " artists.")
+message("Updated albums_data.json with audio previews and favorite tracks!")

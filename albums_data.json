@@ -2,31 +2,389 @@
   {
     "artist": "BTS",
     "album": "Love Yourself 結 'Answer'",
+    "release_date": "2018-08-24T07:00:00Z",
+    "genre": "K-Pop",
     "cover_file": "covers/BTS_Love_Yourself____Answer_.jpg",
-    "tracks": ["Euphoria", "Trivia 起 : Just Dance", "Serendipity (Full Length Edition)", "DNA", "Dimple", "Trivia 承 : Love", "Her", "Singularity", "FAKE LOVE", "The Truth Untold (feat. Steve Aoki)", "Trivia 轉 : Seesaw", "Tear", "Epiphany", "I'm Fine", "IDOL", "Answer : Love Myself", "Magic Shop", "Best of Me", "Airplane Pt.2", "Go Go", "Anpanman", "MIC Drop", "DNA (Pedal 2 LA Mix)", "FAKE LOVE (Rocking Vibe Mix)", "MIC Drop (Steve Aoki Remix) [Full Length Edition]", "IDOL (feat. Nicki Minaj)"]
+    "tracks": [
+      {
+        "track_number": 1,
+        "track_name": "Euphoria",
+        "duration_sec": 229,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/39/71/a4397190-0168-cb2a-bbba-da96cd1fe2c0/mzaf_10010426081667198393.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 2,
+        "track_name": "Trivia 起 : Just Dance",
+        "duration_sec": 225,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/ae/f4/9daef4ba-75e7-41f4-3888-33256c833992/mzaf_1514867287319981339.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 3,
+        "track_name": "Serendipity (Full Length Edition)",
+        "duration_sec": 277,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/21/6f/d1216f00-c658-f4ff-4f09-6c2a81304ee6/mzaf_12884086476178341961.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 4,
+        "track_name": "DNA",
+        "duration_sec": 223,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/09/d0/d409d0b1-b411-4f5e-838f-f83e886a0931/mzaf_4091230585279402671.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 5,
+        "track_name": "Dimple",
+        "duration_sec": 197,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/ca/81/46ca8159-d0fa-d893-3504-60e7fddea982/mzaf_244056330368709607.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 6,
+        "track_name": "Trivia 承 : Love",
+        "duration_sec": 226,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/8b/17/998b17a3-283b-3223-8ac1-c9d177cccddf/mzaf_18041515944001118989.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 7,
+        "track_name": "Her",
+        "duration_sec": 229,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/f1/65/c3f1657f-38a0-504d-2c02-403a6b69b7d5/mzaf_16973838493950889930.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 8,
+        "track_name": "Singularity",
+        "duration_sec": 197,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/47/6a/c2476a57-a029-94ea-f09a-091be30926ed/mzaf_4154300534127610473.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 9,
+        "track_name": "FAKE LOVE",
+        "duration_sec": 242,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/d4/c9/0bd4c96a-42f9-ba5b-61ae-b892eedc07bb/mzaf_13192440704264218610.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 10,
+        "track_name": "The Truth Untold (feat. Steve Aoki)",
+        "duration_sec": 242,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/d5/be/a7d5be25-5f89-3333-85df-37f11593e6a8/mzaf_10478615128296803028.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 11,
+        "track_name": "Trivia 轉 : Seesaw",
+        "duration_sec": 246,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/a7/c5/d7a7c515-6432-12c7-1b65-2ae0a72eee3a/mzaf_8733492714469120623.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 12,
+        "track_name": "Tear",
+        "duration_sec": 285,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/97/0e/17970e68-28ff-9f52-972e-c854d9f19730/mzaf_13882029302444352842.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 13,
+        "track_name": "Epiphany",
+        "duration_sec": 240,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/e7/24/6ce724f7-cec5-282b-b624-69527e47afe1/mzaf_6917562963232684754.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 14,
+        "track_name": "I'm Fine",
+        "duration_sec": 240,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/e5/a1/6ee5a127-751f-dca7-a11a-691c82fbe90c/mzaf_16946928806527754582.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 15,
+        "track_name": "IDOL",
+        "duration_sec": 223,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/66/e4/ed66e4b9-85a6-931b-d9f7-cd6728ca4ef5/mzaf_7284917574445292460.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 16,
+        "track_name": "Answer : Love Myself",
+        "duration_sec": 251,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/4f/fa/064ffaa2-6208-1204-ca19-10588948e2be/mzaf_15305902773500286171.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 1,
+        "track_name": "Magic Shop",
+        "duration_sec": 276,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/b5/b9/62b5b9ad-8fdc-ff5d-b6f3-6b768b7dbfed/mzaf_969557536106706717.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 2,
+        "track_name": "Best of Me",
+        "duration_sec": 227,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/7f/fe/bf7ffec0-51c5-f932-100b-3ee5a459e14c/mzaf_10320025575563083014.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 3,
+        "track_name": "Airplane Pt.2",
+        "duration_sec": 219,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/7e/39/e57e39cf-74b4-1fe5-0e50-834a72ec4fff/mzaf_9776030739913749929.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 4,
+        "track_name": "Go Go",
+        "duration_sec": 236,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/b1/c9/7cb1c923-e654-df1b-3e43-b318c7a154ee/mzaf_2264864460443382215.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 5,
+        "track_name": "Anpanman",
+        "duration_sec": 233,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/be/08/41be0859-8f81-012f-c371-8ea6cde23d13/mzaf_5664123048164882314.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 6,
+        "track_name": "MIC Drop",
+        "duration_sec": 238,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/99/62/ca99624a-e285-1b3b-fbbc-5b49e24e3bf6/mzaf_17663668298580733193.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 7,
+        "track_name": "DNA (Pedal 2 LA Mix)",
+        "duration_sec": 247,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/c9/2e/57c92e31-48a7-9f1f-037c-a13ee521073f/mzaf_7716759258203905103.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 8,
+        "track_name": "FAKE LOVE (Rocking Vibe Mix)",
+        "duration_sec": 238,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/7c/bb/017cbbf3-507a-68ce-9c99-56b8f4ebcf00/mzaf_11438914958599107132.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 9,
+        "track_name": "MIC Drop (Steve Aoki Remix) [Full Length Edition]",
+        "duration_sec": 308,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/e8/8c/05e88ce1-dad8-dadf-bd2b-dbcb6ef700ff/mzaf_14451742491713489730.plus.aac.p.m4a",
+        "is_favorite": true
+      },
+      {
+        "track_number": 10,
+        "track_name": "IDOL (feat. Nicki Minaj)",
+        "duration_sec": 260,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/5a/55/3f5a554b-24ea-cc7c-f103-1d66914bdb14/mzaf_10157574609067131439.plus.aac.p.m4a",
+        "is_favorite": false
+      }
+    ]
   },
   {
     "artist": "BLACKPINK",
     "album": "THE ALBUM",
+    "release_date": "2020-10-02T07:00:00Z",
+    "genre": "K-Pop",
     "cover_file": "covers/BLACKPINK_THE_ALBUM.jpg",
-    "tracks": ["How You Like That", "Ice Cream", "Pretty Savage", "Bet You Wanna (feat. Cardi B)", "Lovesick Girls", "Crazy Over You", "Love To Hate Me", "You Never Know"]
+    "tracks": [
+      {
+        "track_number": 1,
+        "track_name": "How You Like That",
+        "duration_sec": 181,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/b2/b1/8fb2b1a2-2498-9490-82f8-0226abfa9dc9/mzaf_9379484322617408629.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 2,
+        "track_name": "Ice Cream",
+        "duration_sec": 176,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/f6/78/c4f678ba-f083-21b6-c6cc-15dadedabe1d/mzaf_14876609161592985484.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 3,
+        "track_name": "Pretty Savage",
+        "duration_sec": 199,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/19/b2/bf19b215-652f-10f3-7c46-015c8e33fb20/mzaf_18317960859887760637.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 4,
+        "track_name": "Bet You Wanna (feat. Cardi B)",
+        "duration_sec": 159,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/2d/7a/a22d7a83-0abb-216f-8266-a5f1eb396fba/mzaf_452925500222010749.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 5,
+        "track_name": "Lovesick Girls",
+        "duration_sec": 193,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/34/85/223485da-cc1c-8bc9-ed49-d50c044685f2/mzaf_3936647775516282553.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 6,
+        "track_name": "Crazy Over You",
+        "duration_sec": 162,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/c9/9a/6cc99aba-56fb-584d-e3f8-8aaa16041445/mzaf_2426597149756568783.plus.aac.p.m4a",
+        "is_favorite": true
+      },
+      {
+        "track_number": 7,
+        "track_name": "Love To Hate Me",
+        "duration_sec": 170,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/c0/ef/40c0efbb-3ca0-efe4-90a2-e8c254d83835/mzaf_11279726680685248795.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 8,
+        "track_name": "You Never Know",
+        "duration_sec": 229,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/c1/62/a2c1625c-f0b5-982e-4960-dc204c566605/mzaf_17797949882309540786.plus.aac.p.m4a",
+        "is_favorite": false
+      }
+    ]
   },
   {
     "artist": "NewJeans",
     "album": "NewJeans 2nd EP 'Get Up'",
+    "release_date": "2023-07-21T07:00:00Z",
+    "genre": "K-Pop",
     "cover_file": "covers/NewJeans_NewJeans_2nd_EP__Get_Up_.jpg",
-    "tracks": ["New Jeans", "Super Shy", "ETA", "Cool With You", "Get Up", "ASAP"]
+    "tracks": [
+      {
+        "track_number": 1,
+        "track_name": "New Jeans",
+        "duration_sec": 109,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/fa/58/a1fa5822-ae67-1034-afcd-572c6d0cb264/mzaf_5691875287854100815.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 2,
+        "track_name": "Super Shy",
+        "duration_sec": 155,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/79/f3/bb79f38e-575d-5d68-a765-7160f27dc198/mzaf_7070253468473867952.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 3,
+        "track_name": "ETA",
+        "duration_sec": 151,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/eb/dc/fbebdc04-d035-0b34-6df7-7c7e73e1c5ce/mzaf_1666920854414573023.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 4,
+        "track_name": "Cool With You",
+        "duration_sec": 148,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/59/53/aa59533b-71e8-cf81-d8a1-29da229caa8f/mzaf_12452112547662327605.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 5,
+        "track_name": "Get Up",
+        "duration_sec": 36,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/04/7f/9a047f4f-1936-b01e-92cd-cacd94e58996/mzaf_10570954596436510811.plus.aac.p.m4a",
+        "is_favorite": true
+      },
+      {
+        "track_number": 6,
+        "track_name": "ASAP",
+        "duration_sec": 134,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/0e/96/9d0e96d8-678c-0d58-67ed-f83d6bcd3c57/mzaf_208859305911599617.plus.aac.p.m4a",
+        "is_favorite": false
+      }
+    ]
   },
   {
     "artist": "Stray Kids",
     "album": "November 11th - Single",
+    "release_date": "2026-09-10T07:00:00Z",
+    "genre": "K-Pop",
     "cover_file": "covers/Stray_Kids_November_11th___Single.jpg",
-    "tracks": ["November 11th"]
+    "tracks": [
+      {
+        "track_number": 1,
+        "track_name": "November 11th",
+        "duration_sec": 186,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/74/ff/8e74ff42-2824-cac0-4fef-de66a5de1b71/mzaf_16205168558300290664.plus.aac.p.m4a",
+        "is_favorite": true
+      }
+    ]
   },
   {
     "artist": "CORTIS",
     "album": "GREENGREEN_playextended",
+    "release_date": "2026-08-23T07:00:00Z",
+    "genre": "K-Pop",
     "cover_file": "covers/CORTIS_GREENGREEN_playextended.jpg",
-    "tracks": ["TNT", "REDRED", "ACAI", "YOUNGCREATORCREW", "Wassup", "Blue Lips", "PACK IT UP", "MONEYMONEYMONEY"]
+    "tracks": [
+      {
+        "track_number": 1,
+        "track_name": "TNT",
+        "duration_sec": 123,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/12/d7/cb12d760-d660-d978-f5c8-99ebb2b14e8c/mzaf_14425310115469169385.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 2,
+        "track_name": "REDRED",
+        "duration_sec": 163,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/60/28/bd60289f-14eb-d851-0035-98df2f040c61/mzaf_9049514115928578879.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 3,
+        "track_name": "ACAI",
+        "duration_sec": 174,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/23/92/d1239272-4b50-1ec7-94da-4b0dad1119a7/mzaf_7871901481281487253.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 4,
+        "track_name": "YOUNGCREATORCREW",
+        "duration_sec": 177,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/82/c1/7e82c133-e8fb-f60c-8ebf-5a6cdcc2d5a1/mzaf_9438372649575759880.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 5,
+        "track_name": "Wassup",
+        "duration_sec": 185,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/0f/6e/e40f6e57-7d85-7277-6d9c-447892e48009/mzaf_3818335530855596208.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 6,
+        "track_name": "Blue Lips",
+        "duration_sec": 142,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/00/aa/3000aa86-ecec-2bc8-4455-77f8d9364277/mzaf_15239921809680557657.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 7,
+        "track_name": "PACK IT UP",
+        "duration_sec": 112,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/6d/14/466d146b-0adc-5719-459f-b5064414dc4e/mzaf_2216010420591897004.plus.aac.p.m4a",
+        "is_favorite": false
+      },
+      {
+        "track_number": 8,
+        "track_name": "MONEYMONEYMONEY",
+        "duration_sec": 140,
+        "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/2a/a3/f72aa38c-2fc7-a1c8-3d3b-07e1892e6109/mzaf_16172899169911041078.plus.aac.p.m4a",
+        "is_favorite": true
+      }
+    ]
   }
 ]

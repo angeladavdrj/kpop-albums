@@ -1,0 +1,77 @@
+---
+title: "Album Analysis"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(tidyverse)
+library(jsonlite)
+library(knitr)
+
+# Load album data and unnest track details
+albums <- fromJSON("albums_data.json")
+
+songs <- albums |>
+  select(artist, album, genre, tracks) |>
+  unnest(tracks) |>
+  mutate(duration_min = round(duration_sec / 60, 2))
+```
+
+This page analyzes track counts, song durations, and highlights from our K-pop album collection.
+
+## Album Overview
+
+```{r}
+album_summary <- songs |>
+  group_by(Artist = artist, Album = album, Genre = genre) |>
+  summarize(
+    `Total Tracks` = n(),
+    `Avg Length (min)` = round(mean(duration_min, na.rm = TRUE), 1),
+    `Fan Favorite` = track_name[is_favorite][1],
+    .groups = "drop"
+  )
+
+kable(album_summary)
+```
+
+## Track Counts by Album
+
+How do our selected albums compare in size?
+
+```{r}
+album_summary |>
+  ggplot(aes(x = reorder(Album, `Total Tracks`), y = `Total Tracks`, fill = Artist)) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = `Total Tracks`), hjust = -0.3, size = 3.8) +
+  coord_flip() +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(
+    title = "Number of Tracks per Album",
+    subtitle = "Full-length albums vs. EPs and singles",
+    x = NULL,
+    y = "Track Count"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+## Song Durations
+
+How long are the songs on each album?
+
+```{r}
+songs |>
+  ggplot(aes(x = reorder(album, duration_min, FUN = median), y = duration_min, color = artist)) +
+  geom_jitter(width = 0.15, size = 2.5, alpha = 0.7, show.legend = FALSE) +
+  geom_boxplot(alpha = 0.2, outlier.shape = NA, show.legend = FALSE) +
+  coord_flip() +
+  labs(
+    title = "Song Duration Distribution by Album",
+    subtitle = "Track length in minutes across projects",
+    x = NULL,
+    y = "Duration (minutes)"
+  ) +
+  theme_minimal(base_size = 13)
+```
