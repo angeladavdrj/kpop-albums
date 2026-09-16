@@ -1,0 +1,51 @@
+---
+title: "Kpop albums"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+Click any album cover below to expand and view its full tracklist.
+
+```{r}
+#| results: asis
+
+library(jsonlite)
+library(purrr)
+
+albums <- fromJSON("albums_data.json")
+
+cat('<div class="album-grid">\n')
+
+pwalk(albums, \(artist, album, cover_file, tracks) {
+  cat('<details class="album-card" name="kpop-albums">\n')
+  cat('  <summary>\n')
+  cat('    <img src="', cover_file, '" alt="', artist, ' - ', album, '" />\n', sep = "")
+  cat('    <div class="album-title">', album, '</div>\n', sep = "")
+  cat('    <div class="album-artist">', artist, '</div>\n', sep = "")
+  cat('    <span class="click-hint">▶ View tracklist</span>\n')
+  cat('  </summary>\n')
+  cat('  <ol class="tracklist">\n')
+  walk(tracks, \(trk) cat('    <li>', trk, '</li>\n', sep = ""))
+  cat('  </ol>\n')
+  cat('</details>\n')
+})
+
+cat('</div>\n')
+```
+
+```{=html}
+<script>
+// Automatically close other albums when a new one is opened
+document.querySelectorAll('details.album-card').forEach(card => {
+  card.addEventListener('toggle', () => {
+    if (card.open) {
+      document.querySelectorAll('details.album-card').forEach(other => {
+        if (other !== card) other.open = false;
+      });
+    }
+  });
+});
+</script>
+```

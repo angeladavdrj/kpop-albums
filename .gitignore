@@ -1,0 +1,13 @@
+# Quarto build outputs and cache
+/.quarto/
+/_site/
+/_freeze/
+**/*.quarto_ipynb
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+
+# OS files
+.DS_Store

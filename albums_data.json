@@ -1,0 +1,32 @@
+[
+  {
+    "artist": "BTS",
+    "album": "Love Yourself 結 'Answer'",
+    "cover_file": "covers/BTS_Love_Yourself____Answer_.jpg",
+    "tracks": ["Euphoria", "Trivia 起 : Just Dance", "Serendipity (Full Length Edition)", "DNA", "Dimple", "Trivia 承 : Love", "Her", "Singularity", "FAKE LOVE", "The Truth Untold (feat. Steve Aoki)", "Trivia 轉 : Seesaw", "Tear", "Epiphany", "I'm Fine", "IDOL", "Answer : Love Myself", "Magic Shop", "Best of Me", "Airplane Pt.2", "Go Go", "Anpanman", "MIC Drop", "DNA (Pedal 2 LA Mix)", "FAKE LOVE (Rocking Vibe Mix)", "MIC Drop (Steve Aoki Remix) [Full Length Edition]", "IDOL (feat. Nicki Minaj)"]
+  },
+  {
+    "artist": "BLACKPINK",
+    "album": "THE ALBUM",
+    "cover_file": "covers/BLACKPINK_THE_ALBUM.jpg",
+    "tracks": ["How You Like That", "Ice Cream", "Pretty Savage", "Bet You Wanna (feat. Cardi B)", "Lovesick Girls", "Crazy Over You", "Love To Hate Me", "You Never Know"]
+  },
+  {
+    "artist": "NewJeans",
+    "album": "NewJeans 2nd EP 'Get Up'",
+    "cover_file": "covers/NewJeans_NewJeans_2nd_EP__Get_Up_.jpg",
+    "tracks": ["New Jeans", "Super Shy", "ETA", "Cool With You", "Get Up", "ASAP"]
+  },
+  {
+    "artist": "Stray Kids",
+    "album": "November 11th - Single",
+    "cover_file": "covers/Stray_Kids_November_11th___Single.jpg",
+    "tracks": ["November 11th"]
+  },
+  {
+    "artist": "CORTIS",
+    "album": "GREENGREEN_playextended",
+    "cover_file": "covers/CORTIS_GREENGREEN_playextended.jpg",
+    "tracks": ["TNT", "REDRED", "ACAI", "YOUNGCREATORCREW", "Wassup", "Blue Lips", "PACK IT UP", "MONEYMONEYMONEY"]
+  }
+]
