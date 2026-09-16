@@ -4,6 +4,14 @@
 /_freeze/
 **/*.quarto_ipynb
 
+# Generated project artifacts
+/stickers.html
+/covers/
+/albums_data.json
+/*.html
+/analysis_files/
+/site_libs/
+
 # R session files
 .Rhistory
 .RData

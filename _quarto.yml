@@ -17,6 +17,7 @@ format:
       - cosmo
       - brand
     css: styles.css
+    include-after-body: stickers.html
     toc: true
 
 
