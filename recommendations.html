@@ -181,10 +181,11 @@ function renderRecommendations(selectedIndex) {
     return;
   }
 
-  const selected = albumData[Number(selectedIndex)];
+  const selectedArrayIndex = Number(selectedIndex) - 1;
+  const selected = albumData[selectedArrayIndex];
   const candidates = albumData
     .map((album, index) => ({ album, index }))
-    .filter(({ album, index }) => index !== Number(selectedIndex) && album.artist !== selected.artist)
+    .filter(({ album, index }) => index !== selectedArrayIndex && album.artist !== selected.artist)
     .map(({ album, index }) => {
       const genreScore = album.genre === selected.genre ? 5 : 0;
       const trackScore = Math.max(0, 3 - Math.abs(album.track_count - selected.track_count) / 3);
