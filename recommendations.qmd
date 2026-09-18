@@ -1,0 +1,113 @@
+---
+title: "Album Recommendations"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+Choose an album to find two nearby listening recommendations from this collection.
+
+```{r}
+#| results: asis
+
+library(jsonlite)
+library(dplyr)
+
+albums <- fromJSON("albums_data.json")
+
+recommendation_data <- albums |>
+  transmute(
+    artist,
+    album,
+    genre,
+    cover_file,
+    track_count = lengths(tracks),
+    avg_duration = vapply(tracks, \(tracklist) mean(tracklist$duration_sec, na.rm = TRUE), numeric(1))
+  ) |>
+  mutate(avg_duration = round(avg_duration))
+
+cat('<select id="album-picker" class="album-picker" aria-label="Choose an album">\n')
+cat('<option value="">Choose an album...</option>\n')
+for (album_index in seq_len(nrow(recommendation_data))) {
+  cat(
+    '<option value="', album_index, '">',
+    recommendation_data$artist[album_index], ' - ',
+    recommendation_data$album[album_index],
+    '</option>\n',
+    sep = ""
+  )
+}
+cat('</select>\n')
+cat(
+  '<script id="album-data" type="application/json">',
+  toJSON(recommendation_data, auto_unbox = TRUE),
+  '</script>\n'
+)
+```
+
+<div id="recommendation-output" class="recommendation-output" aria-live="polite">
+  <p class="recommendation-empty">Select an album above to get started.</p>
+</div>
+
+```{=html}
+<script>
+const albumPicker = document.querySelector('#album-picker');
+const albumData = JSON.parse(document.querySelector('#album-data').textContent);
+const recommendationOutput = document.querySelector('#recommendation-output');
+
+const formatDuration = seconds => `${Math.floor(seconds / 60)}m ${seconds % 60}s average`;
+
+function albumCard(album, label) {
+  return `
+    <article class="recommendation-card">
+      <img src="${album.cover_file}" alt="${album.artist} - ${album.album} cover">
+      <div class="recommendation-card-body">
+        <span class="recommendation-label">${label}</span>
+        <h3>${album.album}</h3>
+        <p class="recommendation-artist">${album.artist}</p>
+        <p class="recommendation-stats">${album.genre} · ${album.track_count} tracks · ${formatDuration(album.avg_duration)}</p>
+      </div>
+    </article>`;
+}
+
+function renderRecommendations(selectedIndex) {
+  if (selectedIndex === '') {
+    recommendationOutput.innerHTML = '<p class="recommendation-empty">Select an album above to get started.</p>';
+    return;
+  }
+
+  const selected = albumData[Number(selectedIndex)];
+  const candidates = albumData
+    .map((album, index) => ({ album, index }))
+    .filter(({ album, index }) => index !== Number(selectedIndex) && album.artist !== selected.artist)
+    .map(({ album, index }) => {
+      const genreScore = album.genre === selected.genre ? 5 : 0;
+      const trackScore = Math.max(0, 3 - Math.abs(album.track_count - selected.track_count) / 3);
+      const durationScore = Math.max(0, 2 - Math.abs(album.avg_duration - selected.avg_duration) / 45);
+      return { album, index, score: genreScore + trackScore + durationScore };
+    })
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 2);
+
+  recommendationOutput.innerHTML = `
+    <div class="selected-album">
+      <div>
+        <span class="recommendation-label">You picked</span>
+        <h2>${selected.album}</h2>
+        <p>${selected.artist} · ${selected.genre}</p>
+      </div>
+      <div class="selected-album-facts">
+        <strong>${selected.track_count}</strong><span>tracks</span>
+        <strong>${formatDuration(selected.avg_duration)}</strong>
+      </div>
+    </div>
+    <h2 class="recommendation-heading">Because you like this, try these</h2>
+    <div class="recommendation-grid">
+      ${candidates.map(({ album }, index) => albumCard(album, `Recommendation ${index + 1}`)).join('')}
+    </div>`;
+}
+
+albumPicker.addEventListener('change', event => renderRecommendations(event.target.value));
+</script>
+```

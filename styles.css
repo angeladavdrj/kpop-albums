@@ -112,6 +112,134 @@
   height: 30px;
 }
 
+.album-picker {
+  width: min(100%, 34rem);
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #172554;
+  font: inherit;
+}
+
+.recommendation-output {
+  margin-top: 1.5rem;
+}
+
+.recommendation-empty {
+  padding: 2rem;
+  border: 1px dashed #93c5fd;
+  border-radius: 8px;
+  background: #f8fbff;
+  color: #475569;
+  text-align: center;
+}
+
+.selected-album {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-left: 5px solid #f97316;
+  background: #fff7ed;
+}
+
+.selected-album h2,
+.recommendation-card h3 {
+  margin: 0.25rem 0;
+}
+
+.selected-album p,
+.recommendation-artist,
+.recommendation-stats {
+  margin: 0;
+  color: #475569;
+}
+
+.selected-album-facts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.5rem;
+  min-width: 10rem;
+}
+
+.selected-album-facts strong {
+  font-size: 1.25rem;
+  color: #c2410c;
+}
+
+.selected-album-facts span {
+  margin-right: 0.75rem;
+  color: #7c2d12;
+  font-size: 0.85rem;
+}
+
+.recommendation-label {
+  color: #c2410c;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.recommendation-heading {
+  margin-top: 2.25rem;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.recommendation-card {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  overflow: hidden;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(124, 45, 18, 0.08);
+}
+
+.recommendation-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 9rem;
+  object-fit: cover;
+}
+
+.recommendation-card-body {
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .selected-album,
+  .recommendation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-album {
+    display: block;
+  }
+
+  .selected-album-facts {
+    margin-top: 1rem;
+  }
+
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendation-card img {
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+}
+
 /* Pop-up sticker animations */
 @keyframes stickerPop {
   0% {

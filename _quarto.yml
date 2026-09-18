@@ -9,6 +9,8 @@ website:
         text: Home
       - href: analysis.qmd
         text: Charts & Summary
+      - href: recommendations.qmd
+        text: Recommendations
       - about.qmd
 
 format:
@@ -17,7 +19,6 @@ format:
       - cosmo
       - brand
     css: styles.css
-    include-after-body: stickers.html
     toc: true
 
 

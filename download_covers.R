@@ -5,7 +5,11 @@ library(jsonlite)
 dir.create("covers", showWarnings = FALSE)
 
 # Artists to search
-artists <- c("BTS", "BLACKPINK", "NewJeans", "Stray Kids", "CORTIS")
+artists <- c(
+  "BTS", "BLACKPINK", "NewJeans", "Stray Kids", "CORTIS",
+  "TWICE", "SEVENTEEN", "aespa", "LE SSERAFIM", "ENHYPEN",
+  "TOMORROW X TOGETHER", "IVE", "(G)I-DLE", "NMIXX", "Red Velvet"
+)
 
 # Function to fetch album info, cover image, tracklist, and audio previews
 fetch_album <- \(artist) {
@@ -17,7 +21,7 @@ fetch_album <- \(artist) {
   )
   results <- fromJSON(search_url)$results
   
-  if (is.null(results) || nrow(results) == 0) return(NULL)
+  if (!is.data.frame(results) || nrow(results) == 0) return(NULL)
   
   col_id <- results$collectionId[1]
   album_name <- results$collectionName[1]
